@@ -1,0 +1,20 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+
+# Generated/model files
+*.gguf
+*.bin
+*.pt
+*.pth
+
+# Python cache
+.pytest_cache/
+
+# OS/editor
+.DS_Store
+.vscode/
+
+# Runtime/generated results
+results/*.json

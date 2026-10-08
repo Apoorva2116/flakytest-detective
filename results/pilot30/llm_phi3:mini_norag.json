@@ -1,0 +1,152 @@
+{
+ "test_random_discount_applied": {
+  "flaky": true,
+  "reason": "The test uses a random number to determine the discount rate, which can cause the test to pass or fail without code changes.",
+  "seconds": 55.13
+ },
+ "test_random_item_price": {
+  "flaky": true,
+  "reason": "The test uses a random choice for the price, which can lead to different outcomes on different runs.",
+  "seconds": 11.06
+ },
+ "test_timing_budget": {
+  "flaky": true,
+  "reason": "The test uses a random sleep time, which can cause the test to pass or fail without code changes.",
+  "seconds": 10.37
+ },
+ "test_set_order_assumption": {
+  "flaky": true,
+  "reason": "The test assumes that the set data structure maintains the order of elements, which is not guaranteed in Python versions before 3.6.",
+  "seconds": 9.5
+ },
+ "test_set_order_assumption_2": {
+  "flaky": true,
+  "reason": "The test relies on the unpredictable order of elements in a set when converted to a list, which can vary between runs.",
+  "seconds": 9.43
+ },
+ "test_wall_clock_microsecond": {
+  "flaky": true,
+  "reason": "The test depends on the wall clock, which can have microsecond precision that varies across different systems and times, leading to non-deterministic outcomes.",
+  "seconds": 10.0
+ },
+ "test_uuid_first_char": {
+  "flaky": true,
+  "reason": "The test passes or fails randomly due to the non-deterministic nature of UUID generation.",
+  "seconds": 8.04
+ },
+ "test_simulated_service_timeout": {
+  "flaky": true,
+  "reason": "The test randomly raises a TimeoutError with a 10% chance, causing intermittent failures.",
+  "seconds": 9.77
+ },
+ "test_background_flag_race": {
+  "flaky": true,
+  "reason": "The test does not join the thread, allowing the main thread to potentially exit before the worker thread sets the 'done' flag, leading to flaky behavior.",
+  "seconds": 12.9
+ },
+ "test_timestamp_ns_modulo": {
+  "flaky": true,
+  "reason": "The test depends on the current time, which is nondeterministic and can cause the test to pass or fail without code changes.",
+  "seconds": 9.42
+ },
+ "test_add": {
+  "flaky": false,
+  "reason": "The test has consistently passed with no failures in the last 5 runs.",
+  "seconds": 6.69
+ },
+ "test_add_negative": {
+  "flaky": false,
+  "reason": "The test consistently passes with no failures in the last 5 runs.",
+  "seconds": 7.38
+ },
+ "test_total": {
+  "flaky": false,
+  "reason": "The test has consistently passed in the last 5 runs and there is no indication of nondeterminism.",
+  "seconds": 9.6
+ },
+ "test_total_empty": {
+  "flaky": false,
+  "reason": "The test consistently passes as expected for an empty list.",
+  "seconds": 7.29
+ },
+ "test_discount": {
+  "flaky": false,
+  "reason": "The test has no failures in the last 5 runs and there is no indication of nondeterminism.",
+  "seconds": 10.76
+ },
+ "test_discount_zero": {
+  "flaky": false,
+  "reason": "The test consistently passes with no failures in the last 5 runs.",
+  "seconds": 7.67
+ },
+ "test_is_adult_true": {
+  "flaky": false,
+  "reason": "The test checks a constant value and has no dependencies, thus it is stable.",
+  "seconds": 7.62
+ },
+ "test_is_adult_false": {
+  "flaky": false,
+  "reason": "The test consistently fails as expected for a 17-year-inage, which is not an adult.",
+  "seconds": 8.26
+ },
+ "test_slugify": {
+  "flaky": false,
+  "reason": "The test has not failed in the last 5 runs and there is no indication of nondeterminism in the provided code.",
+  "seconds": 9.39
+ },
+ "test_first": {
+  "flaky": false,
+  "reason": "The test consistently passes with the same input and no changes to the code have been made.",
+  "seconds": 8.58
+ },
+ "test_first_empty": {
+  "flaky": false,
+  "reason": "The test checks for an empty list and expects None, which is a deterministic behavior.",
+  "seconds": 7.34
+ },
+ "test_cap": {
+  "flaky": false,
+  "reason": "The test is deterministic as it consistently fails due to the `assert` statement expecting a different output.",
+  "seconds": 7.26
+ },
+ "test_clamp_low": {
+  "flaky": false,
+  "reason": "The test consistently passes with the same input and expected output, indicating stability.",
+  "seconds": 9.64
+ },
+ "test_clamp_high": {
+  "flaky": false,
+  "reason": "The test consistently passes with the same input values, indicating stability.",
+  "seconds": 8.98
+ },
+ "test_mean": {
+  "flaky": false,
+  "reason": "The test asserts a specific expected value for a deterministic input, which should always pass if the `mean` function is implemented correctly.",
+  "seconds": 9.34
+ },
+ "test_unique_sorted": {
+  "flaky": false,
+  "reason": "The test has consistently passed in the last 5 runs and there is no indication of nondeterminism.",
+  "seconds": 10.98
+ },
+ "test_apply_tax": {
+  "flaky": false,
+  "reason": "The test has no failures in the last 5 runs and asserts a specific expected output, indicating stability.",
+  "seconds": 11.05
+ },
+ "test_total_floats": {
+  "flaky": false,
+  "reason": "The test consistently passes as the expected output is correct and the function appears to be deterministic.",
+  "seconds": 10.61
+ },
+ "test_slugify_spaces": {
+  "flaky": false,
+  "reason": "The test has not failed in the last 5 runs and there is no indication of nondeterministic behavior.",
+  "seconds": 9.34
+ },
+ "test_known_bug_mean_empty": {
+  "flaky": false,
+  "reason": "The test consistently fails due to a real, consistent bug in the `mean` function when called with an empty list.",
+  "seconds": 9.8
+ }
+}

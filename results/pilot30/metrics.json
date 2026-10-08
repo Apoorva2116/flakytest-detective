@@ -1,0 +1,43 @@
+{
+ "truth": [
+  "test_background_flag_race",
+  "test_random_discount_applied",
+  "test_random_item_price",
+  "test_set_order_assumption",
+  "test_set_order_assumption_2",
+  "test_simulated_service_timeout",
+  "test_timestamp_ns_modulo",
+  "test_timing_budget",
+  "test_uuid_first_char",
+  "test_wall_clock_microsecond"
+ ],
+ "rows": [
+  [
+   "rerun_once_rule",
+   0.0,
+   0.0,
+   0.0,
+   0,
+   0,
+   10
+  ],
+  [
+   "failed_in_history_rule",
+   0.9090909090909091,
+   1.0,
+   0.9523809523809523,
+   10,
+   1,
+   0
+  ],
+  [
+   "phi3:mini_norag",
+   1.0,
+   1.0,
+   1.0,
+   10,
+   0,
+   0
+  ]
+ ]
+}

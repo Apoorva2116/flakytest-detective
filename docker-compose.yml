@@ -1,0 +1,14 @@
+services:
+  flakytest:
+    image: flakytest-detective:latest
+    container_name: flakytest-detective
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    environment:
+      OLLAMA_HOST: "http://host.docker.internal:11434"
+    command: >
+      python -c
+      "import requests;
+      r=requests.get('http://host.docker.internal:11434/api/tags');
+      print(r.status_code);
+      print(r.json())"

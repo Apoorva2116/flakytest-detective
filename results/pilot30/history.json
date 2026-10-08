@@ -1,0 +1,340 @@
+{
+ "n": 5,
+ "tests": {
+  "test_random_discount_applied": {
+   "results": [
+    0,
+    0,
+    1,
+    1,
+    0
+   ],
+   "msgs": [
+    "assert 100.0 == 90.0\n +  where 100.0 = discount(100, 0.0)",
+    "assert 100.0 == 90.0\n +  where 100.0 = discount(100, 0.0)",
+    "assert 100.0 == 90.0\n +  where 100.0 = discount(100, 0.0)"
+   ]
+  },
+  "test_random_item_price": {
+   "results": [
+    1,
+    1,
+    1,
+    1,
+    0
+   ],
+   "msgs": [
+    "assert 16 == 15\n +  where 16 = add(11, 5)"
+   ]
+  },
+  "test_timing_budget": {
+   "results": [
+    1,
+    0,
+    1,
+    0,
+    0
+   ],
+   "msgs": [
+    "assert (1791458251.799446 - 1791458251.7429256) < 0.05\n +  where 1791458251.799446 = <built-in function time>()\n +    where <built-in function time> = time.time",
+    "assert (1791458252.6880226 - 1791458252.628565) < 0.05\n +  where 1791458252.6880226 = <built-in function time>()\n +    where <built-in function time> = time.time",
+    "assert (1791458253.167526 - 1791458253.1073506) < 0.05\n +  where 1791458253.167526 = <built-in function time>()\n +    where <built-in function time> = time.time"
+   ]
+  },
+  "test_set_order_assumption": {
+   "results": [
+    0,
+    0,
+    1,
+    1,
+    0
+   ],
+   "msgs": [
+    "AssertionError: assert ['y', 'x'] == ['x', 'y']\n  \n  At index 0 diff: 'y' != 'x'\n  Use -v to get more diff",
+    "AssertionError: assert ['y', 'x'] == ['x', 'y']\n  \n  At index 0 diff: 'y' != 'x'\n  Use -v to get more diff",
+    "AssertionError: assert ['y', 'x'] == ['x', 'y']\n  \n  At index 0 diff: 'y' != 'x'\n  Use -v to get more diff"
+   ]
+  },
+  "test_set_order_assumption_2": {
+   "results": [
+    0,
+    0,
+    0,
+    1,
+    0
+   ],
+   "msgs": [
+    "AssertionError: assert ['blue', 'red'] == ['red', 'blue']\n  \n  At index 0 diff: 'blue' != 'red'\n  Use -v to get more diff",
+    "AssertionError: assert ['blue', 'red'] == ['red', 'blue']\n  \n  At index 0 diff: 'blue' != 'red'\n  Use -v to get more diff",
+    "AssertionError: assert ['blue', 'red'] == ['red', 'blue']\n  \n  At index 0 diff: 'blue' != 'red'\n  Use -v to get more diff",
+    "AssertionError: assert ['blue', 'red'] == ['red', 'blue']\n  \n  At index 0 diff: 'blue' != 'red'\n  Use -v to get more diff"
+   ]
+  },
+  "test_wall_clock_microsecond": {
+   "results": [
+    1,
+    0,
+    1,
+    1,
+    1
+   ],
+   "msgs": [
+    "assert 816900 < 800000\n +  where 816900 = datetime.datetime(2026, 10, 8, 16, 47, 31, 816900).microsecond\n +    where datetime.datetime(2026, 10, 8, 16, 47, 31, 816900) = <built-in method now of type o"
+   ]
+  },
+  "test_uuid_first_char": {
+   "results": [
+    1,
+    1,
+    0,
+    1,
+    1
+   ],
+   "msgs": [
+    "AssertionError: assert 'a' != 'a'"
+   ]
+  },
+  "test_simulated_service_timeout": {
+   "results": [
+    1,
+    1,
+    0,
+    1,
+    1
+   ],
+   "msgs": [
+    "TimeoutError: upstream service timed out"
+   ]
+  },
+  "test_background_flag_race": {
+   "results": [
+    1,
+    1,
+    1,
+    1,
+    0
+   ],
+   "msgs": [
+    "assert False"
+   ]
+  },
+  "test_timestamp_ns_modulo": {
+   "results": [
+    1,
+    1,
+    1,
+    0,
+    1
+   ],
+   "msgs": [
+    "assert (1791458252749788553 % 7) != 0\n +  where 1791458252749788553 = <built-in function time_ns>()\n +    where <built-in function time_ns> = time.time_ns"
+   ]
+  },
+  "test_add": {
+   "results": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "msgs": []
+  },
+  "test_add_negative": {
+   "results": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "msgs": []
+  },
+  "test_total": {
+   "results": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "msgs": []
+  },
+  "test_total_empty": {
+   "results": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "msgs": []
+  },
+  "test_discount": {
+   "results": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "msgs": []
+  },
+  "test_discount_zero": {
+   "results": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "msgs": []
+  },
+  "test_is_adult_true": {
+   "results": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "msgs": []
+  },
+  "test_is_adult_false": {
+   "results": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "msgs": []
+  },
+  "test_slugify": {
+   "results": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "msgs": []
+  },
+  "test_first": {
+   "results": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "msgs": []
+  },
+  "test_first_empty": {
+   "results": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "msgs": []
+  },
+  "test_cap": {
+   "results": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "msgs": []
+  },
+  "test_clamp_low": {
+   "results": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "msgs": []
+  },
+  "test_clamp_high": {
+   "results": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "msgs": []
+  },
+  "test_mean": {
+   "results": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "msgs": []
+  },
+  "test_unique_sorted": {
+   "results": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "msgs": []
+  },
+  "test_apply_tax": {
+   "results": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "msgs": []
+  },
+  "test_total_floats": {
+   "results": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "msgs": []
+  },
+  "test_slugify_spaces": {
+   "results": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "msgs": []
+  },
+  "test_known_bug_mean_empty": {
+   "results": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "msgs": [
+    "ZeroDivisionError: division by zero",
+    "ZeroDivisionError: division by zero",
+    "ZeroDivisionError: division by zero",
+    "ZeroDivisionError: division by zero",
+    "ZeroDivisionError: division by zero"
+   ]
+  }
+ }
+}
